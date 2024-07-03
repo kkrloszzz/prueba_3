@@ -129,6 +129,9 @@ def opc4():
     
     with open(nombre_archivo,"w",newline="") as archivo:
         escritor = csv.writer(archivo) 
-        
-
+        escritor.writerows("Nombre, Rut, Dirección, Comuna, Cantidad, Total")
+        for x in range (len(nombres)):
+            print(nombres[x], ruts[x], direcciones[x], comunas[x], cantidades[x], totales[x])
+  
+ 
   

@@ -15,9 +15,18 @@ while True:
     print("4. Imprimir hoja de ruta")
     print("5. Salir")
     
-    opc=int(input("\nElija una opción: "))
-      
+    while True:
+        try:
+            opc=int(input("\nElija una opción: "))
+            if opc in(1,2,3,4,5):
+                break
+            else:
+                print("ERROR! REINTENTE")
 
+
+        except:
+            print("ERROR! OPCIÓN INVÁLIDA")
+            time.sleep(2)
     if opc==1:
        opc1()
 
